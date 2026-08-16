@@ -1,0 +1,25 @@
+body {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+}
+
+body * {
+  width: 100%;
+  color: white;
+}
+
+.main-container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: max-content;
+}
+.button-primary {
+  background-color: gray;
+  color: white;
+}

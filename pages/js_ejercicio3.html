@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="../css/boilerplate.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/js_ejercicio3.css" />
   </head>
 
   <body>
@@ -78,24 +79,36 @@
       </header>
       <main class="ejercicios-main">
         <div class="consigna">
-          <h1>Ejercicio 1 - Cambiador de Color de Fondo</h1>
+          <h1>Ejercicio 3 - Lista Dinámica</h1>
+
           <p>
-            Objetivo del ejercicio: Practicar eventos en JavaScript y
-            manipulación de estilos del DOM.
+            Objetivo del ejercicio: Trabajar con la creación, eliminación y
+            manipulación de elementos del DOM.
           </p>
           <p>
-            Ejercicio: Crea una página web con un botón que diga "Cambiar
-            color". Cada vez que el usuario haga clic en el botón, el color de
-            fondo de la página debe cambiar a un color aleatorio.
+            Ejercicio: Crea una página con un campo de texto, un botón que diga
+            "Agregar", y una lista vacía debajo.
           </p>
+          <ul>
+            <li>
+              Cuando el usuario escriba un texto y haga clic en "Agregar", el
+              texto debe añadirse como un nuevo elemento de la lista.
+            </li>
+            <li>
+              Añade un botón al lado de cada elemento para eliminarlo de la
+              lista
+            </li>
+          </ul>
         </div>
         <div class="resolucion">
-          <button class="button button-primary" id="button-ej-1">
-            Cambiar color
+          <input type="text" id="texto" placeholder="Escribe aquí" />
+          <button class="button button-primary" id="button-ej-3">
+            Agregar
           </button>
+          <ul id="lista"></ul>
         </div>
       </main>
     </div>
-    <script src="../js/js_ejercicio1.js"></script>
+    <script src="../js/js_ejercicio3.js"></script>
   </body>
 </html>

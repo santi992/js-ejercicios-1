@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="../css/boilerplate.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/js_ejercicio3.css" />
+    <link rel="stylesheet" href="../css/js_ejercicio9.css" />
   </head>
 
   <body>
@@ -54,7 +54,7 @@
               <a href="js_ejercicio2.html">Ejercicio 2</a>
             </li>
             <li class="ejercicio">
-              <a class="link-active" href="js_ejercicio3.html">Ejercicio 3</a>
+              <a href="js_ejercicio3.html">Ejercicio 3</a>
             </li>
             <li class="ejercicio">
               <a href="js_ejercicio4.html">Ejercicio 4</a>
@@ -72,43 +72,54 @@
               <a href="js_ejercicio8.html">Ejercicio 8</a>
             </li>
             <li class="ejercicio">
-              <a href="js_ejercicio9.html">Ejercicio 9</a>
+              <a class="link-active" href="js_ejercicio9.html">Ejercicio 9</a>
             </li>
           </ul>
         </nav>
       </header>
       <main class="ejercicios-main">
         <div class="consigna">
-          <h1>Ejercicio 3 - Lista Dinámica</h1>
-
+          <h1>Lista de Tareas con LocalStorage</h1>
           <p>
-            Objetivo del ejercicio: Trabajar con la creación, eliminación y
-            manipulación de elementos del DOM.
+            Objetivo del ejercicio: Practicar persistencia de datos con
+            localStorage.
           </p>
-          <p>
-            Ejercicio: Crea una página con un campo de texto, un botón que diga
-            "Agregar", y una lista vacía debajo.
-          </p>
+          <p>Ejercicio: Crea una aplicación de lista de tareas.</p>
           <ul>
             <li>
-              Cuando el usuario escriba un texto y haga clic en "Agregar", el
-              texto debe añadirse como un nuevo elemento de la lista.
+              Cada tarea debe incluir un texto y un checkbox para marcarla como
+              completada.
             </li>
             <li>
-              Añade un botón al lado de cada elemento para eliminarlo de la
-              lista
+              Las tareas se deben guardar en localStorage para que persistan
+              incluso si la página se recarga.
+            </li>
+            <li>
+              Debe incluir un botón para limpiar todas las tareas completadas y
+              actualizar el localStorage.
             </li>
           </ul>
         </div>
-        <div class="resolucion">
-          <input type="text" id="texto" placeholder="Escribe aquí" />
-          <button class="button button-primary" id="button-ej-3">
-            Agregar
-          </button>
-          <ul id="lista"></ul>
+        <div class="resolucion ej-9">
+          <div class="contenedor">
+            <h2>Lista de tareas</h2>
+
+            <div class="entrada">
+              <input type="text" id="texto-ej-9" placeholder="Nueva tarea..." />
+              <button class="button button-primary" id="button-agregar">
+                Agregar
+              </button>
+            </div>
+
+            <ul id="lista-ej-9"></ul>
+
+            <button class="button button-primary" id="button-limpiar">
+              Limpiar completadas
+            </button>
+          </div>
         </div>
       </main>
     </div>
-    <script src="../js/js_ejercicio3.js"></script>
+    <script src="../js/js_ejercicio9.js"></script>
   </body>
 </html>

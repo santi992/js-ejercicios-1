@@ -1,0 +1,13 @@
+.ej-7 .generador {
+  margin-inline: auto;
+  width: 500px;
+}
+
+.ej-7 * {
+  margin-block: 5px;
+  font-size: 20px;
+}
+
+.ej-7 input {
+  color: black;
+}

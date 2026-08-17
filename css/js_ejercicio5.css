@@ -1,0 +1,21 @@
+.ej-5 * {
+  margin-block: 5px;
+  font-size: 20px;
+}
+
+.ej-5 .calculadora {
+  width: 500px;
+}
+
+.ej-5 .calculadora > input {
+  color: black;
+}
+
+.ej-5 .botones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ej-5 .calculadora > p {
+  margin-top: 20px;
+}

@@ -17,3 +17,9 @@
   color: black;
   transition: 200ms ease all;
 }
+
+.link-active {
+  padding: 10px;
+  background-color: white;
+  color: black;
+}

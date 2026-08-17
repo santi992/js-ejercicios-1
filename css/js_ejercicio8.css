@@ -1,0 +1,9 @@
+.ej-8 .contenedor {
+  margin-inline: auto;
+  width: 500px;
+}
+
+.ej-8 textarea {
+  color: black;
+  padding: 10px;
+}

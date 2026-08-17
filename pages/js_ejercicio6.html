@@ -36,7 +36,6 @@
     <link rel="stylesheet" href="../css/boilerplate.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/js_ejercicio3.css" />
   </head>
 
   <body>
@@ -54,7 +53,7 @@
               <a href="js_ejercicio2.html">Ejercicio 2</a>
             </li>
             <li class="ejercicio">
-              <a class="link-active" href="js_ejercicio3.html">Ejercicio 3</a>
+              <a href="js_ejercicio3.html">Ejercicio 3</a>
             </li>
             <li class="ejercicio">
               <a href="js_ejercicio4.html">Ejercicio 4</a>
@@ -63,7 +62,7 @@
               <a href="js_ejercicio5.html">Ejercicio 5</a>
             </li>
             <li class="ejercicio">
-              <a href="js_ejercicio6.html">Ejercicio 6</a>
+              <a class="link-active" href="js_ejercicio6.html">Ejercicio 6</a>
             </li>
             <li class="ejercicio">
               <a href="js_ejercicio7.html">Ejercicio 7</a>
@@ -79,36 +78,41 @@
       </header>
       <main class="ejercicios-main">
         <div class="consigna">
-          <h1>Ejercicio 3 - Lista Dinámica</h1>
-
+          <h1>Temporizador con Inicio, Pausa y Reinicio</h1>
           <p>
-            Objetivo del ejercicio: Trabajar con la creación, eliminación y
-            manipulación de elementos del DOM.
+            Objetivo del ejercicio: Practicar manejo de eventos, funciones de
+            temporización y manipulación del DOM.
           </p>
           <p>
-            Ejercicio: Crea una página con un campo de texto, un botón que diga
-            "Agregar", y una lista vacía debajo.
+            Ejercicio: Crea una página con un temporizador que comience en
+            00:00:00. Incluye tres botones: “Iniciar”, “Pausar” y “Reiniciar”.
           </p>
           <ul>
             <li>
-              Cuando el usuario escriba un texto y haga clic en "Agregar", el
-              texto debe añadirse como un nuevo elemento de la lista.
+              Al hacer clic en “Iniciar”, el temporizador debe comenzar a contar
+              los segundos, minutos y horas.
             </li>
-            <li>
-              Añade un botón al lado de cada elemento para eliminarlo de la
-              lista
-            </li>
+            <li>“Pausar” detiene el conteo pero mantiene el tiempo actual.</li>
+            <li>“Reiniciar” pone el temporizador en 00:00:00.</li>
           </ul>
         </div>
-        <div class="resolucion">
-          <input type="text" id="texto" placeholder="Escribe aquí" />
-          <button class="button button-primary" id="button-ej-3">
-            Agregar
-          </button>
-          <ul id="lista"></ul>
+        <div class="resolucion ej-6">
+          <p id="tiempo">00:00:00</p>
+
+          <div class="botones">
+            <button class="button button-primary" id="button-iniciar">
+              Iniciar
+            </button>
+            <button class="button button-primary" id="button-pausar">
+              Pausar
+            </button>
+            <button class="button button-primary" id="button-reiniciar">
+              Reiniciar
+            </button>
+          </div>
         </div>
       </main>
     </div>
-    <script src="../js/js_ejercicio3.js"></script>
+    <script src="../js/js_ejercicio6.js"></script>
   </body>
 </html>

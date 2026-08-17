@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="../css/boilerplate.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/js_ejercicio3.css" />
+    <link rel="stylesheet" href="../css/js_ejercicio8.css" />
   </head>
 
   <body>
@@ -54,7 +54,7 @@
               <a href="js_ejercicio2.html">Ejercicio 2</a>
             </li>
             <li class="ejercicio">
-              <a class="link-active" href="js_ejercicio3.html">Ejercicio 3</a>
+              <a href="js_ejercicio3.html">Ejercicio 3</a>
             </li>
             <li class="ejercicio">
               <a href="js_ejercicio4.html">Ejercicio 4</a>
@@ -69,7 +69,7 @@
               <a href="js_ejercicio7.html">Ejercicio 7</a>
             </li>
             <li class="ejercicio">
-              <a href="js_ejercicio8.html">Ejercicio 8</a>
+              <a class="link-active" href="js_ejercicio8.html">Ejercicio 8</a>
             </li>
             <li class="ejercicio">
               <a href="js_ejercicio9.html">Ejercicio 9</a>
@@ -79,36 +79,42 @@
       </header>
       <main class="ejercicios-main">
         <div class="consigna">
-          <h1>Ejercicio 3 - Lista Dinámica</h1>
-
+          <h1>Contador de Palabras y Caracteres</h1>
           <p>
-            Objetivo del ejercicio: Trabajar con la creación, eliminación y
-            manipulación de elementos del DOM.
+            Objetivo del ejercicio: Practicar eventos en tiempo real y
+            manipulación avanzada del DOM.
           </p>
           <p>
-            Ejercicio: Crea una página con un campo de texto, un botón que diga
-            "Agregar", y una lista vacía debajo.
+            Ejercicio: Crea una página con un campo de texto donde el usuario
+            pueda escribir un párrafo.
           </p>
           <ul>
             <li>
-              Cuando el usuario escriba un texto y haga clic en "Agregar", el
-              texto debe añadirse como un nuevo elemento de la lista.
+              Muestra en tiempo real el número de caracteres y palabras
+              ingresados debajo del campo.
             </li>
             <li>
-              Añade un botón al lado de cada elemento para eliminarlo de la
-              lista
+              Palabras deben ser separadas por espacios, y los caracteres no
+              deben incluir espacios ni saltos de línea.
             </li>
           </ul>
         </div>
-        <div class="resolucion">
-          <input type="text" id="texto" placeholder="Escribe aquí" />
-          <button class="button button-primary" id="button-ej-3">
-            Agregar
-          </button>
-          <ul id="lista"></ul>
+        <div class="resolucion ej-8">
+          <div class="contenedor">
+            <textarea
+              id="texto-ej-8"
+              placeholder="Escribe aquí..."
+              rows="6"
+            ></textarea>
+
+            <div class="conteos">
+              <p>Palabras: <span id="palabras">0</span></p>
+              <p>Caracteres: <span id="caracteres">0</span></p>
+            </div>
+          </div>
         </div>
       </main>
     </div>
-    <script src="../js/js_ejercicio3.js"></script>
+    <script src="../js/js_ejercicio8.js"></script>
   </body>
 </html>

@@ -36,7 +36,6 @@
     <link rel="stylesheet" href="../css/boilerplate.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/js_ejercicio3.css" />
   </head>
 
   <body>
@@ -54,10 +53,10 @@
               <a href="js_ejercicio2.html">Ejercicio 2</a>
             </li>
             <li class="ejercicio">
-              <a class="link-active" href="js_ejercicio3.html">Ejercicio 3</a>
+              <a href="js_ejercicio3.html">Ejercicio 3</a>
             </li>
             <li class="ejercicio">
-              <a href="js_ejercicio4.html">Ejercicio 4</a>
+              <a class="link-active" href="js_ejercicio4.html">Ejercicio 4</a>
             </li>
             <li class="ejercicio">
               <a href="js_ejercicio5.html">Ejercicio 5</a>
@@ -79,36 +78,35 @@
       </header>
       <main class="ejercicios-main">
         <div class="consigna">
-          <h1>Ejercicio 3 - Lista Dinámica</h1>
+          <h1>Filtro de Búsqueda en Tiempo Real</h1>
 
           <p>
-            Objetivo del ejercicio: Trabajar con la creación, eliminación y
-            manipulación de elementos del DOM.
+            Objetivo del ejercicio: Practicar la interacción entre eventos del
+            DOM y lógica en JavaScript.
           </p>
           <p>
-            Ejercicio: Crea una página con un campo de texto, un botón que diga
-            "Agregar", y una lista vacía debajo.
+            Ejercicio: Crea una página con un campo de texto y una lista
+            predefinida de elementos.
           </p>
           <ul>
             <li>
-              Cuando el usuario escriba un texto y haga clic en "Agregar", el
-              texto debe añadirse como un nuevo elemento de la lista.
-            </li>
-            <li>
-              Añade un botón al lado de cada elemento para eliminarlo de la
-              lista
+              Mientras el usuario escribe en el campo, la lista debe
+              actualizarse en tiempo real para mostrar solo los elementos que
+              contienen el texto escrito.
             </li>
           </ul>
+          <p>
+            Ejemplo: Si la lista contiene ["Perro", "Gato", "Pez"] y el usuario
+            escribe "Ga", solo "Gato" debe quedar visible.
+          </p>
         </div>
         <div class="resolucion">
-          <input type="text" id="texto" placeholder="Escribe aquí" />
-          <button class="button button-primary" id="button-ej-3">
-            Agregar
-          </button>
-          <ul id="lista"></ul>
+          <input type="text" id="texto-ej-4" placeholder="Buscar..." />
+          <p>Animales:</p>
+          <ul id="lista-ej-4"></ul>
         </div>
       </main>
     </div>
-    <script src="../js/js_ejercicio3.js"></script>
+    <script src="../js/js_ejercicio4.js"></script>
   </body>
 </html>

@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="../css/boilerplate.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/js_ejercicio3.css" />
+    <link rel="stylesheet" href="../css/js_ejercicio5.css" />
   </head>
 
   <body>
@@ -54,13 +54,13 @@
               <a href="js_ejercicio2.html">Ejercicio 2</a>
             </li>
             <li class="ejercicio">
-              <a class="link-active" href="js_ejercicio3.html">Ejercicio 3</a>
+              <a href="js_ejercicio3.html">Ejercicio 3</a>
             </li>
             <li class="ejercicio">
               <a href="js_ejercicio4.html">Ejercicio 4</a>
             </li>
             <li class="ejercicio">
-              <a href="js_ejercicio5.html">Ejercicio 5</a>
+              <a class="link-active" href="js_ejercicio5.html">Ejercicio 5</a>
             </li>
             <li class="ejercicio">
               <a href="js_ejercicio6.html">Ejercicio 6</a>
@@ -79,36 +79,52 @@
       </header>
       <main class="ejercicios-main">
         <div class="consigna">
-          <h1>Ejercicio 3 - Lista Dinámica</h1>
+          <h1>Calculadora Sencilla</h1>
 
           <p>
-            Objetivo del ejercicio: Trabajar con la creación, eliminación y
-            manipulación de elementos del DOM.
+            Objetivo del ejercicio: Practicar la manipulación de formularios,
+            eventos, y lógica básica de JavaScript.
           </p>
           <p>
-            Ejercicio: Crea una página con un campo de texto, un botón que diga
-            "Agregar", y una lista vacía debajo.
+            Ejercicio: Crea una página con dos campos de entrada de números y
+            cuatro botones: "Sumar", "Restar", "Multiplicar", y "Dividir".
           </p>
           <ul>
             <li>
-              Cuando el usuario escriba un texto y haga clic en "Agregar", el
-              texto debe añadirse como un nuevo elemento de la lista.
+              Al hacer clic en cualquiera de los botones, debe mostrarse el
+              resultado de la operación en un área de texto o debajo de los
+              botones.
             </li>
             <li>
-              Añade un botón al lado de cada elemento para eliminarlo de la
-              lista
+              Asegúrate de validar los datos para evitar errores (como división
+              por cero o entradas vacías).
             </li>
           </ul>
         </div>
-        <div class="resolucion">
-          <input type="text" id="texto" placeholder="Escribe aquí" />
-          <button class="button button-primary" id="button-ej-3">
-            Agregar
-          </button>
-          <ul id="lista"></ul>
+        <div class="resolucion ej-5">
+          <div class="calculadora">
+            <input type="number" id="num1" placeholder="Número 1" />
+            <input type="number" id="num2" placeholder="Número 2" />
+
+            <div class="botones">
+              <button class="button button-primary" id="button-sumar">
+                Sumar
+              </button>
+              <button class="button button-primary" id="button-restar">
+                Restar
+              </button>
+              <button class="button button-primary" id="button-multiplicar">
+                Multiplicar
+              </button>
+              <button class="button button-primary" id="button-dividir">
+                Dividir
+              </button>
+            </div>
+            <p>Resultado: <span id="resultado">x</span></p>
+          </div>
         </div>
       </main>
     </div>
-    <script src="../js/js_ejercicio3.js"></script>
+    <script src="../js/js_ejercicio5.js"></script>
   </body>
 </html>

@@ -1,0 +1,37 @@
+.ej-9 .contenedor {
+  margin-inline: auto;
+  width: 500px;
+}
+.ej-9 .entrada * {
+  margin-block: 10px;
+}
+
+.ej-9 input {
+  color: black;
+  padding: 10px;
+}
+
+.ej-9 .check {
+  width: 20px;
+}
+
+.ej-9 li {
+  margin-block: 5px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+}
+
+.ej-9 li > span {
+  width: 300px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.button-eliminar {
+  background-color: brown;
+  padding-block: 2px;
+  margin-left: 20px;
+}
